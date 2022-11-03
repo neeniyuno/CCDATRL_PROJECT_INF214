@@ -64,7 +64,7 @@ public class Queue_Linkedlist {
 	}
 
 	public void display() {
-        if (isEmpty()) {
+        	if (isEmpty()) {
 			System.out.println("The Queue is Empty.");
 			return;
 		}
