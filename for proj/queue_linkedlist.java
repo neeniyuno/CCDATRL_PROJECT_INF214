@@ -64,9 +64,17 @@ public class Queue_Linkedlist {
 	}
 
 	public void display() {
+
+        if (isEmpty()) {
+			System.out.println("The Queue is Empty.");
+			return;
+		}
 		Node temp = front;
+        System.out.println("Current Queue: ");
 		while (temp.next != null) {
-			System.out.println(temp.data );
+            
+			System.out.println(temp.data);
+            
 			temp = temp.next;
 		}
 		System.out.println(temp.data);
