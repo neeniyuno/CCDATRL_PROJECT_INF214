@@ -69,7 +69,7 @@ public class Queue_Linkedlist {
 			return;
 		}
 		Node temp = front;
-        System.out.println("Current Queue: ");
+        	System.out.println("Current Queue: ");
 		while (temp.next != null) {
             
 			System.out.println(temp.data);
