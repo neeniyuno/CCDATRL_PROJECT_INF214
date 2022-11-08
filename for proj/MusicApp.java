@@ -12,7 +12,8 @@ public class MusicApp {
 			System.out.println("To display the current queue, choose Display.");
 			System.out.println("To see the current song playing, choose Peek.");
 			System.out.println("If you wish to play the next song, choose Next and then Display to see the current queue, \nand Peek to see the current playing song.");
-			System.out.println("Enjoy listening!!\n\n");
+			System.out.println("Choose Exit to exit the app.");
+			System.out.println("\nEnjoy listening!!\n\n");
 			while (true) {
 				
 				System.out.print("Enter your choice: ");
@@ -29,6 +30,10 @@ public class MusicApp {
 
 				} else if (choice.equalsIgnoreCase("Peek")) {
 					music.peek();
+				
+				}else if (choice.equalsIgnoreCase("Exit")) {
+					System.out.println("Closing app...");
+					System.exit(0);
 				}
 
 			}
